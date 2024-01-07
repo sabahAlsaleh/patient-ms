@@ -18,6 +18,7 @@ public abstract class User {
     private String password;
 
     private LocalDate birthDate;
+    @Enumerated(EnumType.STRING)
     private Role role;
 
     public enum Role {EMPLOYEE, PATIENT}

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot-patient
-          image: sabahalsaleh/patient-iamge
+          image: yamanjkk/springboot-patient
           ports:
             - containerPort: 8083
           env:   # Setting Enviornmental Variables
