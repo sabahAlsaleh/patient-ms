@@ -7,6 +7,58 @@
     <list default="true" id="2b354899-5b31-4249-ae21-32d61615fac7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/PatientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/PatientApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/controller/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/controller/MessageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/controller/NoteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/controller/NoteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/controller/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/controller/PatientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/dto/request/MessageRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/dto/request/MessageRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/dto/request/NoteRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/dto/request/NoteRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/dto/request/RegisterRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/dto/request/RegisterRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/dto/response/EncounterDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/dto/response/EncounterDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/dto/response/MessageDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/dto/response/MessageDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/dto/response/MessageWithRepliesDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/dto/response/MessageWithRepliesDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/dto/response/NoteDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/dto/response/NoteDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/dto/response/PatientDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/dto/response/PatientDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/dto/response/ReplyDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/dto/response/ReplyDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/dto/response/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/dto/response/UserDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/exception/DuplicatedUserInfoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/exception/DuplicatedUserInfoException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/exception/NotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/exception/NotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/mapping/EncounterMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/mapping/EncounterMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/mapping/MessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/mapping/MessageMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/mapping/NoteMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/mapping/NoteMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/mapping/PatientMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/mapping/PatientMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/mapping/StrategyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/mapping/StrategyMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/mapping/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/mapping/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/model/Condition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/model/Condition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/model/Employee$Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/model/Employee$Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/model/Encounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/model/Encounter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/model/Message$Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/model/Message$Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/model/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/model/Note.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/model/Note.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/model/Observation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/model/Observation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/model/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/model/Patient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/model/Reply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/model/Reply.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/model/User$Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/model/User$Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/repository/MessageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/repository/MessageRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/repository/NoteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/repository/NoteRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/repository/PatientRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/repository/PatientRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/security/CustomSecurityExpressionMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/security/CustomSecurityExpressionMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/security/JwtAuthConverter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/security/JwtAuthConverter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/security/JwtAuthConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/security/JwtAuthConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/service/EncounterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/service/EncounterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/service/MessageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/service/NoteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/service/NoteService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/service/PatientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/service/PatientService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/service/impl/EncounterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/service/impl/EncounterServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/service/impl/MessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/service/impl/MessageServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/service/impl/NoteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/service/impl/NoteServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/service/impl/PatientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/service/impl/PatientServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/patient/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/patient/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +96,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/KTH_3/FullStack/Devops/PatientSystem_Frontend_ms",
+    "last_opened_file_path": "C:/KTH_3/FullStack/Microservices",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "configurable.group.appearance"
   },
   "keyToStringList": {
@@ -74,7 +129,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704041174613</updated>
-      <workItem from="1704041177438" duration="22122000" />
+      <workItem from="1704041177438" duration="23232000" />
     </task>
     <servers />
   </component>
