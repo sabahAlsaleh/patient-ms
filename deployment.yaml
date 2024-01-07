@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot-patient
-          image: yamanjkk/springboot-patient
+          image: sabahalsaleh/springboot-patient
           ports:
             - containerPort: 8083
           env:   # Setting Enviornmental Variables
@@ -31,7 +31,7 @@ spec:
                   key :  password
 
             - name: spring.datasource.url
-              value: "jdbc:mysql://mysql-service/JournalSystemDB?allowPublicKeyRetrieval=true&useSSL=false"
+              value: "jdbc:mysql://mysql-service/PatientSystemDB?allowPublicKeyRetrieval=true&useSSL=false"
 
 ---
 
