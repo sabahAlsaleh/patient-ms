@@ -10,6 +10,9 @@ import com.example.patient.service.EncounterService;
 import com.example.patient.service.NoteService;
 import com.example.patient.service.PatientService;
 import com.example.patient.service.UserService;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,6 +27,9 @@ import java.util.List;
 @CrossOrigin
 @RestController
 @RequestMapping("/api/v1/patients/{patientId}/notes")
+@Data
+@AllArgsConstructor
+
 public class NoteController {
     private final UserService userService;
     private final StrategyMapper<User, UserDto> userMapper;
@@ -34,19 +40,6 @@ public class NoteController {
     private final EncounterService encounterService;
 
 
-    @Autowired
-    public NoteController(NoteService noteService, UserService userService,
-                          StrategyMapper<Note, NoteDto> noteMapper, StrategyMapper<User, UserDto> userMapper,
-                          StrategyMapper<Encounter, EncounterDto> encounterMapper,
-                          PatientService patientService, EncounterService encounterService) {
-        this.noteService = noteService;
-        this.userService = userService;
-        this.noteMapper = noteMapper;
-        this.userMapper = userMapper;
-        this.encounterMapper = encounterMapper;
-        this.patientService = patientService;
-        this.encounterService = encounterService;
-    }
 
     @PostMapping
     @PreAuthorize("hasRole('EMPLOYEE')")

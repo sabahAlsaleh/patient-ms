@@ -190,5 +190,7 @@
     <orderEntry type="library" name="Maven: com.sun.istack:istack-commons-tools:4.1.2" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml.bind.external:relaxng-datatype:4.0.2" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml.bind.external:rngom:4.0.2" level="project" />
+    <orderEntry type="library" name="Maven: com.example:backend:0.0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.30" level="project" />
   </component>
 </module>

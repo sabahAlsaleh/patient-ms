@@ -3,17 +3,16 @@ package com.example.patient.controller;
 import com.example.patient.dto.request.RegisterRequest;
 import com.example.patient.dto.response.PatientDto;
 import com.example.patient.dto.response.UserDto;
-import com.example.patient.exception.DuplicatedUserInfoException;
+// import com.example.patient.exception.DuplicatedUserInfoException;
 import com.example.patient.mapping.StrategyMapper;
 import com.example.patient.model.Patient;
 import com.example.patient.model.User;
-import com.example.patient.security.KeycloakSecurityUtil;
+import com.example.patient.security.KeycloakSecurityManager;
 import com.example.patient.service.PatientService;
 import com.example.patient.service.UserService;
 import jakarta.ws.rs.core.Response;
 import org.keycloak.admin.client.Keycloak;
 import org.keycloak.representations.idm.CredentialRepresentation;
-import org.keycloak.representations.idm.RoleRepresentation;
 import org.keycloak.representations.idm.UserRepresentation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -31,7 +30,7 @@ import java.util.List;
 @CrossOrigin
 public class PatientController {
     @Autowired
-    KeycloakSecurityUtil keycloakUtil;
+    KeycloakSecurityManager keycloakUtil;
     @Value("${realm}")
     private String realm;
 
@@ -65,11 +64,9 @@ public class PatientController {
             userService.createUser(user);
 
             return new ResponseEntity<>(userMapper.map(user), HttpStatus.CREATED);
-        } catch (DuplicatedUserInfoException e) {
+        } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.CONFLICT,
                     String.format("Email %s already has been used", registerRequest.email()));
-        } catch (Exception e) {
-            throw new ResponseStatusException(HttpStatus.NOT_ACCEPTABLE, "User could not be created");
         }
     }
 
@@ -123,38 +120,5 @@ public class PatientController {
         return userRep;
     }
 
-    /*
-    private void assignRoles(String username, List<String> roles) {
-        List<RoleRepresentation> roleList = rolesToRealmRoleRepresentation(roles);
-        Keycloak keycloak = keycloakUtil.getKeycloakInstance();
-        UserRepresentation user  = keycloak.realm(realm)
-                .users()
-                .search(username).get(0);
-        if (user != null) user.setRealmRoles(roles);
 
-    }
-    private List<RoleRepresentation> rolesToRealmRoleRepresentation(List<String> roles) {
-        Keycloak keycloak = keycloakUtil.getKeycloakInstance();
-        List<RoleRepresentation> existingRoles = keycloak.realm(realm)
-                .roles()
-                .list();
-
-        List<String> serverRoles = existingRoles
-                .stream()
-                .map(RoleRepresentation::getName)
-                .toList();
-        List<RoleRepresentation> resultRoles = new ArrayList<>();
-
-        for (String role : roles) {
-            int index = serverRoles.indexOf(role);
-            if (index != -1) {
-                resultRoles.add(existingRoles.get(index));
-            } else {
-                System.out.println("Role doesn't exist");
-            }
-        }
-        return resultRoles;
-    }
-
-     */
 }

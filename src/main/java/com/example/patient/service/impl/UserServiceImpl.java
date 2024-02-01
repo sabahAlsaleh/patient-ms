@@ -1,10 +1,9 @@
 package com.example.patient.service.impl;
 
-import com.example.patient.exception.DuplicatedUserInfoException;
-import com.example.patient.exception.NotFoundException;
 import com.example.patient.model.User;
 import com.example.patient.repository.UserRepository;
 import com.example.patient.service.UserService;
+import jakarta.ws.rs.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -29,7 +28,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public User createUser(User user) {
         if (userRepository.findByUsername(user.getUsername()).isPresent())
-            throw new DuplicatedUserInfoException();
+            throw new NotFoundException();
 
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         return userRepository.save(user);
@@ -63,4 +62,6 @@ public class UserServiceImpl implements UserService {
         return isEmployee(authentication) ||
                 userId.equals(getAuthenticatedUserId(authentication));
     }
+
+
 }

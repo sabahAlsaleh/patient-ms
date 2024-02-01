@@ -8,6 +8,5 @@ import java.util.List;
 
 @Repository
 public interface NoteRepository extends CrudRepository<Note, Long> {
-    List<Note> findAllByPatientId(Long patientId);
     List<Note> findByPatientIdOrderByDateTimeCreatedDesc(Long patientId);
 }

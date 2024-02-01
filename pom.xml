@@ -70,7 +70,16 @@
 			<artifactId>keycloak-admin-client</artifactId>
 			<version>23.0.3</version>
 		</dependency>
-	</dependencies>
+		<dependency>
+			<groupId>com.example</groupId>
+			<artifactId>backend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>

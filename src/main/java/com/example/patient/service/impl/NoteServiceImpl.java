@@ -1,9 +1,9 @@
 package com.example.patient.service.impl;
 
-import com.example.patient.exception.NotFoundException;
 import com.example.patient.model.Note;
 import com.example.patient.repository.NoteRepository;
 import com.example.patient.service.NoteService;
+import jakarta.ws.rs.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

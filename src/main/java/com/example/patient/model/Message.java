@@ -1,12 +1,20 @@
 package com.example.patient.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+
+
 public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,9 +30,6 @@ public class Message {
 
     public enum Status {ACTIVE,ARCHIVED}
 
-    public Message() {
-    }
-
     public Message(String content, User sender) {
         this.content = content;
         this.dateTime = LocalDateTime.now();
@@ -33,63 +38,5 @@ public class Message {
         this.replies = new ArrayList<>();
     }
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public User getSender() {
-        return sender;
-    }
-
-    public void setSender(User sender) {
-        this.sender = sender;
-    }
-
-    public List<Reply> getReplies() {
-        return replies;
-    }
-
-    public void setReplies(List<Reply> replies) {
-        this.replies = replies;
-    }
-
-    public LocalDateTime getDateTime() {
-        return dateTime;
-    }
-
-    public void setDateTime(LocalDateTime dateTime) {
-        this.dateTime = dateTime;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
-    }
-
-    @Override
-    public String toString() {
-        return "Message{" +
-                "id=" + id +
-                ", content='" + content + '\'' +
-                ", dateTime=" + dateTime +
-                ", status=" + status +
-                ", sender=" + sender +
-                ", replies=" + replies +
-                '}';
-    }
 }
